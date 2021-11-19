@@ -57,10 +57,11 @@ void appToApp() async {
 }
 
 void webToApp() async {
-  const url = 'taobao://detail.tmall.com/item.htm?id=610147788029';
-  if (await canLaunch(url)) {
-    await launch(url);
-  } else {
-    throw 'Could not launch $url';
-  }
+  const url = 'h365://games.newtype.h365';
+  await launch(url);
+  // if (await canLaunch(url)) {
+  //   await launch(url, forceSafariVC: false, forceWebView: false);
+  // } else {
+  //   throw 'Could not launch $url';
+  // }
 }
